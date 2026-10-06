@@ -1,4 +1,5 @@
 name: CI with Docker
+run-name: Job dependencies
 
 on:
   push:

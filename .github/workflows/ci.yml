@@ -1,4 +1,5 @@
 name: Job dependencies
+run-name: Job dependencies
 
 on:
   push:

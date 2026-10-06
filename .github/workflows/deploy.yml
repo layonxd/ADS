@@ -1,5 +1,5 @@
 name: Deploy static site to GitHub Pages
-
+run-name: Job dependencies
 on:
   push:
     branches: [ "main" ]  # or "master" if that is your default branch
