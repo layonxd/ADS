@@ -19,7 +19,7 @@ jobs:
         run: docker build -t my-python-app .
 
       - name: Run linting inside container
-        run: docker run my-python-app pylint src || true
+        run: docker run my-python-app pylint src 
 
       #- name: Run application or tests
       #  run: docker run my-python-app python -m unittest discover -s src/tests
