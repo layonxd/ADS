@@ -12,7 +12,7 @@ permissions:
   contents: read
   pages: write
   id-token: write
-  
+
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
@@ -33,7 +33,7 @@ jobs:
       - name: Generate and extract index.html
         run: |
           mkdir -p public
-          docker create --name gen my-python-app
+          docker run --name gen my-python-app
           docker cp gen:/app/index.html ./public/index.html
           docker rm gen
 
